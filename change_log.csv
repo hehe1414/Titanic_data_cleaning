@@ -1,0 +1,8 @@
+Issue,Fix,Count
+Duplicate rows,Removed with drop_duplicates(),0
+Extra spaces / different casing in text,"Used strip(), lower() and upper()","Name, Sex, Embarked"
+Age missing,Filled with median age,177
+Embarked missing,Filled with mode,2
+Cabin mostly missing,Dropped the column,687
+Wrong data types,"Age -> int, Survived/Pclass/Sex/Embarked -> category",5 columns
+Fare outliers,"Checked with IQR, kept them (high fares are real 1st class tickets)",116
